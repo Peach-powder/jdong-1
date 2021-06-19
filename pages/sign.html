@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>京东-欢迎登陆</title>
+    <meta name="keywords" content="京东在线商城" />
+    <meta name="description" content="电商网站" />
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="../css/common.css"/> -->
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+</head>
+
+<body>
+    <!--登录头部开始-->
+    <div class="login_w">
+        <div class="l_login">
+            <a href="#">京东首页</a>
+            <b></b>
+        </div>
+        <div class="r_login">
+            <a href="#">登录页面，调查问卷</a>
+            <b></b>
+        </div>
+    </div>
+    <!--登录头部结束-->
+
+    <!--主体开始-->
+    <div class="main_content">
+        <div class="text">
+            <b></b>
+            <p>
+                依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！
+                新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。
+            </p>
+        </div>
+        <div class="login_w">
+            <div class="form">
+                <div class="form_text">
+                    <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                    <b></b>
+                </div>
+                <div class="top">
+                    <a href="javescript:;" style="color: #e4393c">扫码登录</a>
+                    <a href="javescript:;" class="one">账户登录</a>
+                </div>
+                <div class="teb">
+                    <div class="scan">
+                        <a href="#"><img src="../img/SignInImg/DM_20210617091143_002.png" alt="" />
+                            <img src="../img/SignInImg/DM_20210617091143_009.png" alt="" class="img2" /></a>
+                        <p>打开<i>手机京东</i>&nbsp;&nbsp;&nbsp;&nbsp;扫描二维码</p>
+                        <div class="scan-b">
+                            <b><img src="../img/SignInImg/DM_20210617091143_010_01.jpg" alt="" />免输入</b>
+                            <b><img src="../img/SignInImg/DM_20210617091143_010_03.jpg" alt="" />更快</b>
+                            <b><img src="../img/SignInImg/DM_20210617091143_010_05.jpg" alt="" />更安全</b>
+                        </div>
+                    </div>
+                    <form class="form-horizontal register loginForm">
+                        <div class="middle">
+                            <div class="inputs">
+                                <img src="../img/SignInImg/images/DM_20210617091143_006_01.jpg" alt=""><input type="text" class="public user" name="username" placeholder="邮箱/用户名/登录手机" />
+                                <div class=""></div>
+                                <img src="../img/SignInImg/images/DM_20210617091143_006_03.jpg" alt=""><input type="password" class="public pwd" name="password" placeholder="密码" />
+                                <a href="#" style="text-decoration: none; color: black">忘记密码</a>
+                                <input type="submit" class="btn btn-default submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;录"
+                                    style="outline: none" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="bottom">
+                    <a href="#" class="qq"> <b></b>QQ </a>|
+                    <a href="#" class="wx"> <b></b>微信 </a>
+                    <a href="./register.html" class="register"> <b></b>立即注册 </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主体结束-->
+
+    <!--尾部开始-->
+    <div class="footer">
+        <p>
+            <a href="#">关于我们 </a>| <a href="#">联系我们 </a>|
+            <a href="#">人才招聘 </a>| <a href="#">商家入驻 </a>|
+            <a href="#">广告服务 </a>| <a href="#">手机京东 </a>|
+            <a href="#">友情链接 </a>| <a href="#">销售联盟 </a>|
+            <a href="#">京东社区 </a>| <a href="#">京东公益 </a>|
+            <a href="#">English Site</a>
+        </p>
+        <p class="copyright">Copyright © 2004-2020 京东JD.com 版权所有</p>
+    </div>
+    <!--尾部结束-->
+</body>
+
+<script src="../js/jquery-1.12.4.js"></script>
+
+<script>
+    $(".top>a").click(function () {
+        $(this).index();
+        $($(this).parent().next().children("div").get($(this).index()))
+            .css("display", "block")
+            .siblings()
+            .css("display", "none");
+    });
+</script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/cookie.js"></script>
+<script src="../js/validate/jquery.validate.min.js"></script>
+<script src="../js/validate/localization/messages_zh.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/login.js"></script>
+
+</html>
